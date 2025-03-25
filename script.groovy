@@ -1,4 +1,4 @@
-def initializeApp() {
+def function() {
     echo 'Executing External Groovy Scripts...'
 }
 
