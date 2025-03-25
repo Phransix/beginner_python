@@ -35,6 +35,14 @@ pipeline {
                 }
             }
         }
+
+        stage('Deploy to DockerHub') {
+            steps {
+                script {
+                    gv.deployDockerHub()  // Call deployDockerHub() from loaded script
+                }
+            }
+        }
     }
 
     post {
