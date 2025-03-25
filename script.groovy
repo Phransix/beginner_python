@@ -1,8 +1,3 @@
-// def function() {
-//     echo 'Executing External Groovy Scripts...'
-// }
-
-
 def buildApp() {
     echo 'Building Applicaition from External Groovy Scripts...'
 }

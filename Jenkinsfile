@@ -1,4 +1,4 @@
-def groovy
+def gv
 
 pipeline {
     agent any
@@ -11,7 +11,7 @@ pipeline {
                 steps {
 
                     scripts {
-                         groovy = load 'script.groovy'
+                         gv = load "script.groovy"
                     }
 
                 }
@@ -22,7 +22,7 @@ pipeline {
 
                 steps {
                     scripts {
-                         groovy.buildApp()
+                         gv.buildApp()
                     }
                 }
 
@@ -32,7 +32,7 @@ pipeline {
 
                 steps {
                     scripts {
-                         groovy.testApp()
+                         gv.testApp()
                     }
                 }
 
@@ -42,7 +42,7 @@ pipeline {
 
                 steps {
                     scripts {
-                         groovy.deployApp()
+                         gv.deployApp()
                     }
 
         }
