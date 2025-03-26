@@ -60,6 +60,3 @@ pipeline {
         }
     }
 }
-
-
-address not configured yet <nobody@nowhere>
