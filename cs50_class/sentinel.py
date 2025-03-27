@@ -5,6 +5,7 @@ total = 0.0
 # Get the number or user enters zero to quit [sentinel]
 number = float(input('Enter a number or zero to quit: '))
 
+
 # while number is not equl to zero, begin the loop process
 while number != 0:
     # Add the number to the running total
