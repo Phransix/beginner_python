@@ -5,4 +5,5 @@ length = 34
 width = 45
 
 area = length * width
+
 print(area)
