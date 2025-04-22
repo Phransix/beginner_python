@@ -44,17 +44,17 @@ pipeline {
             }
         }
 
-        stage('Connect to ec2 instance') {
-            steps {
-                script {
-                    def dockerCmd = 'docker run -d -p 3005:3005 <name-of-your-image>'
-                    sshagent(['heavy_dealers']) {
-                      sh 'echo "EC2 instance login setup"'
-                      sh "ssh -o StrictHostKeyChecking=no ec2-user@<ec2-public-ip> ${dockerCmd}"
-                    }
-                }
-            }
-        }
+        // stage('Connect to ec2 instance') {
+        //     steps {
+        //         script {
+        //             def dockerCmd = 'docker run -d -p 3005:3005 <name-of-your-image>'
+        //             sshagent(['heavy_dealers']) {
+        //               sh 'echo "EC2 instance login setup"'
+        //               sh "ssh -o StrictHostKeyChecking=no ec2-user@<ec2-public-ip> ${dockerCmd}"
+        //             }
+        //         }
+        //     }
+        // }
 
     }
 
