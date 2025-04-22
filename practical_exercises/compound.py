@@ -9,7 +9,6 @@ def main():
 
     print("The compound interest is %.2f" %comp_result)
 
-
 def compound_interest(p, r, t, n):
 
     amount =  p * (1 + (r/100)/n)**(n*t)
