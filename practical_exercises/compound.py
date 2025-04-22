@@ -1,4 +1,5 @@
 # calculating compound interest
+
 def main():
     p = float(input("Enter the principal amount: "))
     r = float(input("Enter the interest rate: "))
